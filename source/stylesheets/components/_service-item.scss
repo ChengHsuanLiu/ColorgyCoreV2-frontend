@@ -1,0 +1,43 @@
+.service-item{
+	> .service-bg{
+		position: absolute;
+		top: 50%;
+		@include translateY(-50%);
+
+		img{
+			width: auto;
+			height: auto;
+		}
+	}
+
+	> .service-info{
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		@include translateY(-50%);
+
+		> .service-title{
+			font-size: $title-size;
+		}
+	}
+}
+
+.service{
+	position: fixed;
+	width: 25%;
+	height: 100%;
+
+	&.service1{
+		left: 0;
+	}
+	&.service2{
+		left: 25%;
+	}
+	&.service3{
+		left: 50%;
+	}
+	&.service4{
+		left: 75%;
+	}
+}
