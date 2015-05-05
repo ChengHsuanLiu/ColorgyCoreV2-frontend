@@ -1,25 +1,54 @@
-.service-item{
-	> .service-bg{
-		position: absolute;
-		top: 50%;
-		@include translateY(-50%);
+.service{
+	.service-item{
+		> .service-bg{
+			position: absolute;
+			top: 50%;
+			@include translateY-scale(-50%,0);
+			@include transition-all(0.5s);
 
-		img{
-			width: auto;
-			height: auto;
+			img{
+				width: auto;
+				height: auto;
+			}
+		}
+
+		> .service-info{
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			@include translateY-scale(-50%,1);
+			@include transition-all(0.5s);
+
+			> .service-title{
+				font-size: $title-size;
+				font-style: italic;
+				color: $dark-gray;
+				@include transition-all(0.5s);
+			}
+			> .line{
+				width: 80%;
+				height: 1.5px;
+				background-color: $gray;
+				margin: 15px auto;
+			}
+			> .service-description{
+				p{
+					color: $dark-gray;
+					@include transition-all(0.5s);
+				}
+			}
 		}
 	}
-
-	> .service-info{
-		position: absolute;
-		top: 50%;
-		width: 100%;
-		text-align: center;
-		@include translateY(-50%);
-
-		> .service-title{
-			font-size: $title-size;
-		}
+	&:hover .service-bg{
+		@include translateY-scale(-50%,1);
+	}
+	&:hover .service-info{
+		@include translateY-scale(-50%,1.1);
+	}
+	&:hover p, &:hover .service-title{
+		color: $black !important;
 	}
 }
 
@@ -27,7 +56,11 @@
 	position: fixed;
 	width: 25%;
 	height: 100%;
-
+	overflow: hidden;
+	border-left: 1px solid $gray;
+	&:nth-child(1){
+		border-left: 0px;
+	}
 	&.service1{
 		left: 0;
 	}

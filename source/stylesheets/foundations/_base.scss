@@ -15,6 +15,9 @@ a:hover{
 	text-decoration: none;
 	color: $black;
 }
+a:focus{
+	text-decoration: none;
+}
 .clear{
 	clear: both;
 }
@@ -65,4 +68,29 @@ a:hover{
 	}
 }
 */
-
+.side-nav-profile{
+	.profile-pic{
+		max-width: 60px;
+		border-radius: 120px;
+		overflow: hidden;
+		margin: 20px auto 10px auto;
+	}
+	.profile-name{
+		text-align: center;
+		color: $black;
+		font-size: $normal-size;
+	}
+}
+.profile{
+	img{
+		max-width: 40px;
+		border-radius: 120px;
+		overflow: hidden;
+		margin: 10px auto 10px auto;
+	}
+	.profile-name{
+		text-align: center;
+		color: $dark-gray;
+		font-size: $normal-size;
+	}
+}

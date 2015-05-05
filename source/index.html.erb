@@ -2,27 +2,76 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 service service1">
-
+                <a href="#">
+                    <div class="service-item">
+                        <div class="service-bg" id="mall">
+                            <%= image_tag ('animategif1.gif') %>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                Table
+                            </div>
+                            <div class="line"></div>
+                            <div class="service-description">
+                                <p>輕鬆掌握大學生活課程表</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3 service service2">
-
+                <a href="#">
+                    <div class="service-item">
+                        <div class="service-bg" id="mall">
+                            <%= image_tag ('animategif1.gif') %>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                MALL
+                            </div>
+                            <div class="line"></div>
+                            <div class="service-description">
+                                <p>最新的大學資訊報乎你知</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3 service service3">
-
+                <a href="#">
+                    <div class="service-item">
+                        <div class="service-bg" id="mall">
+                            <%= image_tag ('animategif1.gif') %>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                Books
+                            </div>
+                            <div class="line"></div>
+                            <div class="service-description">
+                                <p>方便快速的團購教科書</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3 service service4">
-                <div class="service-item">
-                    <div class="service-bg" id="mall">
-                    </div>
-                    <div class="service-info">
-                        <div class="service-title">
-                            MALL
+                <a href="#">
+                    <div class="service-item">
+                        <div class="service-bg" id="mall">
+                            <%= image_tag ('animategif1.gif') %>
                         </div>
-                        <div class="service-description">
-                            <p>潮流物件買買買買買買</p>
+                        <div class="service-info">
+                            <div class="service-title">
+                                MALL
+                            </div>
+                            <div class="line"></div>
+                            <div class="service-description">
+                                <p>潮流物件買買買買買買</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -36,13 +85,16 @@
         var windowHeight = $(window).innerHeight();
         $('.index-wrapper').css({ 'height' : windowHeight + 'px'});
     })
+    /*
     $('.service4').hover(
         function(){
             var rand = Math.random();
+            $(this).children('.service-item').children('.service-bg').children('img').remove();
             $(this).children('.service-item').children('.service-bg').append('<img src="/images/animategif1.gif?' + rand + '">');
         },
         function(){
             $(this).children('.service-item').children('.service-bg').children('img').remove();
         }
     )
+    */
 </script>

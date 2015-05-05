@@ -55,6 +55,13 @@
 	-o-transform: translateY($Y);
 	-ms-transform: translateY($Y);
 }
+@mixin translateY-scale( $Y, $scale ){
+	transform: translateY($Y) scale($scale);
+	-webkit-transform: translateY($Y) scale($scale);
+	-moz-transform: translateY($Y) scale($scale);
+	-o-transform: translateY($Y) scale($scale);
+	-ms-transform: translateY($Y) scale($scale);
+}
 @mixin text-overflow-ellipse{
 	text-overflow: ellipsis;
 	overflow: hidden;
