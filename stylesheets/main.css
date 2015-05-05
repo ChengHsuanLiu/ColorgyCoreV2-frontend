@@ -1,3 +1,78 @@
 /* line 1, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 .index-wrapper {
   overflow: hidden; }
+
+/* line 4, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+.fix-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 998; }
+
+/* line 10, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+nav {
+  background-color: transparent !important;
+  box-shadow: none !important; }
+  /* line 13, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  nav hr {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; }
+  /* line 17, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  nav .login-btn {
+    margin-top: 10px;
+    margin-right: 20px; }
+    /* line 20, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    nav .login-btn a {
+      color: #717071; }
+      /* line 23, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+      nav .login-btn a:hover {
+        color: #000000; }
+    /* line 27, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    nav .login-btn:hover {
+      background-color: transparent !important; }
+  /* line 31, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  nav .profile-btn {
+    margin-top: 5px;
+    margin-right: 20px; }
+    /* line 34, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    nav .profile-btn a {
+      color: #717071; }
+      /* line 37, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+      nav .profile-btn a:hover {
+        color: #000000; }
+    /* line 41, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    nav .profile-btn:hover {
+      background-color: transparent !important; }
+
+/* line 46, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+nav .brand-logo {
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+  -moz-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
+  -o-transform: translateX(-50%) !important;
+  transform: translateX(-50%) !important;
+  max-width: 180px;
+  background-image: url("../images/colorgy-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: block;
+  min-width: 150px;
+  height: 40px;
+  margin-top: 15px; }
+
+/* line 64, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 50px !important;
+  line-height: 50px !important; }
+
+/* line 68, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+nav a.button-collapse {
+  display: block !important;
+  color: #717071;
+  margin-left: 25px;
+  margin-top: 10px; }
+  /* line 71, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  nav a.button-collapse:hover {
+    color: #3B3A3B; }
