@@ -13,13 +13,22 @@
 		}
 
 		> .service-info{
-			position: absolute;
-			top: 50%;
 			left: 0;
 			width: 100%;
 			text-align: center;
-			@include translateY-scale(-50%,1);
 			@include transition-all(0.5s);
+
+			@media screen and (min-width: 992px) {
+				@include translateY-scale(-50%,1);
+				position: absolute;
+				top: 50%;
+			}
+			@media screen and (max-width: 992px) {
+				@include translateY-scale(0%,1);
+				position: relative;
+				top: 0%;
+			}
+
 
 			> .service-title{
 				font-size: $title-size;
@@ -41,36 +50,48 @@
 			}
 		}
 	}
-	&:hover .service-bg{
-		@include translateY-scale(-50%,1);
-	}
-	&:hover .service-info{
-		@include translateY-scale(-50%,1.1);
-	}
-	&:hover p, &:hover .service-title{
-		color: $black !important;
+	@media screen and (min-width: 992px) {
+		&:hover .service-bg{
+			@include translateY-scale(-50%,1);
+		}
+		&:hover .service-info{
+			@include translateY-scale(-50%,1.1);
+		}
+		&:hover p, &:hover .service-title{
+			color: $black !important;
+		}
 	}
 }
 
 .service{
-	position: fixed;
-	width: 25%;
-	height: 100%;
-	overflow: hidden;
-	border-left: 1px solid $gray;
-	&:nth-child(1){
-		border-left: 0px;
+	@media screen and (max-width: 991px) {
+		min-height: 150px;
+		&:nth-child(1){
+			margin-top: 100px;
+		}
 	}
-	&.service1{
-		left: 0;
-	}
-	&.service2{
-		left: 25%;
-	}
-	&.service3{
-		left: 50%;
-	}
-	&.service4{
-		left: 75%;
+	@media screen and (min-width: 992px) {
+		position: fixed;
+		width: 25%;
+		height: 100%;
+		overflow: hidden;
+		border-left: 1px solid $gray;
+		cursor: pointer;
+
+		&:nth-child(1){
+			border-left: 0px;
+		}
+		&.service1{
+			left: 0;
+		}
+		&.service2{
+			left: 25%;
+		}
+		&.service3{
+			left: 50%;
+		}
+		&.service4{
+			left: 75%;
+		}
 	}
 }

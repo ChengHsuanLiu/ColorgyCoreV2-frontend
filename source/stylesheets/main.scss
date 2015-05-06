@@ -1,6 +1,10 @@
 .index-wrapper{
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		overflow: auto !important;
+	}
 }
+
 .fix-nav{
 	position: fixed;
 	width: 100%;
@@ -18,10 +22,10 @@ nav{
 		margin-top: 10px;
 		margin-right: 20px;
 		a{
-			color: $dark-gray;
+			color: #717071;
 
 			&:hover{
-				color: $black;
+				color: #000000;
 			}
 		}
 		&:hover{
@@ -32,10 +36,10 @@ nav{
 		margin-top: 5px;
 		margin-right: 20px;
 		a{
-			color: $dark-gray;
+			color: #717071;
 
 			&:hover{
-				color: $black;
+				color: #000000;
 			}
 		}
 		&:hover{
@@ -67,9 +71,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 nav a.button-collapse{
 	display: block !important;
-	color: $dark-gray;
+	color: #717071;
 	&:hover{
-		color: $darker-gray;
+		color: #3B3A3B;
 	}
 	margin-left: 25px;
 	margin-top: 10px;
