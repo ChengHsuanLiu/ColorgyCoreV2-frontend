@@ -18097,22 +18097,35 @@ html.lock, body.lock {
     height: auto; }
 /* line 15, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
 .service .service-item > .service-info {
-  position: absolute;
-  top: 50%;
   left: 0;
   width: 100%;
   text-align: center;
-  transform: translateY(-50%) scale(1);
-  -webkit-transform: translateY(-50%) scale(1);
-  -moz-transform: translateY(-50%) scale(1);
-  -o-transform: translateY(-50%) scale(1);
-  -ms-transform: translateY(-50%) scale(1);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   -moz-transition: all 0.5s; }
-  /* line 24, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  @media screen and (min-width: 992px) {
+    /* line 15, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service .service-item > .service-info {
+      transform: translateY(-50%) scale(1);
+      -webkit-transform: translateY(-50%) scale(1);
+      -moz-transform: translateY(-50%) scale(1);
+      -o-transform: translateY(-50%) scale(1);
+      -ms-transform: translateY(-50%) scale(1);
+      position: absolute;
+      top: 50%; } }
+  @media screen and (max-width: 992px) {
+    /* line 15, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service .service-item > .service-info {
+      transform: translateY(0%) scale(1);
+      -webkit-transform: translateY(0%) scale(1);
+      -moz-transform: translateY(0%) scale(1);
+      -o-transform: translateY(0%) scale(1);
+      -ms-transform: translateY(0%) scale(1);
+      position: relative;
+      top: 0%; } }
+  /* line 33, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
   .service .service-item > .service-info > .service-title {
     font-size: 2em;
     font-style: italic;
@@ -18122,13 +18135,13 @@ html.lock, body.lock {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     -moz-transition: all 0.5s; }
-  /* line 30, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  /* line 39, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
   .service .service-item > .service-info > .line {
     width: 80%;
     height: 1.5px;
     background-color: #D8D8D8;
     margin: 15px auto; }
-  /* line 37, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  /* line 46, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
   .service .service-item > .service-info > .service-description p {
     color: #717071;
     transition: all 0.5s;
@@ -18136,94 +18149,108 @@ html.lock, body.lock {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     -moz-transition: all 0.5s; }
-/* line 44, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-.service:hover .service-bg {
-  transform: translateY(-50%) scale(1);
-  -webkit-transform: translateY(-50%) scale(1);
-  -moz-transform: translateY(-50%) scale(1);
-  -o-transform: translateY(-50%) scale(1);
-  -ms-transform: translateY(-50%) scale(1); }
-/* line 47, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-.service:hover .service-info {
-  transform: translateY(-50%) scale(1.1);
-  -webkit-transform: translateY(-50%) scale(1.1);
-  -moz-transform: translateY(-50%) scale(1.1);
-  -o-transform: translateY(-50%) scale(1.1);
-  -ms-transform: translateY(-50%) scale(1.1); }
-/* line 50, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-.service:hover p, .service:hover .service-title {
-  color: #000000 !important; }
+@media screen and (min-width: 992px) {
+  /* line 54, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  .service:hover .service-bg {
+    transform: translateY(-50%) scale(1);
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1); }
+  /* line 57, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  .service:hover .service-info {
+    transform: translateY(-50%) scale(1.1);
+    -webkit-transform: translateY(-50%) scale(1.1);
+    -moz-transform: translateY(-50%) scale(1.1);
+    -o-transform: translateY(-50%) scale(1.1);
+    -ms-transform: translateY(-50%) scale(1.1); }
+  /* line 60, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  .service:hover p, .service:hover .service-title {
+    color: #000000 !important; } }
 
-/* line 55, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-.service {
-  position: fixed;
-  width: 25%;
-  height: 100%;
-  overflow: hidden;
-  border-left: 1px solid #D8D8D8; }
-  /* line 61, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-  .service:nth-child(1) {
-    border-left: 0px; }
-  /* line 64, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-  .service.service1 {
-    left: 0; }
-  /* line 67, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-  .service.service2 {
-    left: 25%; }
-  /* line 70, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-  .service.service3 {
-    left: 50%; }
-  /* line 73, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
-  .service.service4 {
-    left: 75%; }
+@media screen and (max-width: 991px) {
+  /* line 66, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  .service {
+    min-height: 150px; }
+    /* line 69, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service:nth-child(1) {
+      margin-top: 100px; } }
+@media screen and (min-width: 992px) {
+  /* line 66, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+  .service {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    border-left: 1px solid #D8D8D8;
+    cursor: pointer; }
+    /* line 81, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service:nth-child(1) {
+      border-left: 0px; }
+    /* line 84, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service.service1 {
+      left: 0; }
+    /* line 87, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service.service2 {
+      left: 25%; }
+    /* line 90, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service.service3 {
+      left: 50%; }
+    /* line 93, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/components/_service-item.scss */
+    .service.service4 {
+      left: 75%; } }
 
 /* line 1, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 .index-wrapper {
   overflow: hidden; }
+  @media screen and (max-width: 992px) {
+    /* line 1, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    .index-wrapper {
+      overflow: auto !important; } }
 
-/* line 4, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+/* line 8, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 .fix-nav {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 998; }
 
-/* line 10, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+/* line 14, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 nav {
   background-color: transparent !important;
   box-shadow: none !important; }
-  /* line 13, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  /* line 17, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
   nav hr {
     margin-top: 0 !important;
     margin-bottom: 0 !important; }
-  /* line 17, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  /* line 21, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
   nav .login-btn {
     margin-top: 10px;
     margin-right: 20px; }
-    /* line 20, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    /* line 24, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
     nav .login-btn a {
       color: #717071; }
-      /* line 23, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+      /* line 27, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
       nav .login-btn a:hover {
         color: #000000; }
-    /* line 27, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    /* line 31, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
     nav .login-btn:hover {
       background-color: transparent !important; }
-  /* line 31, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  /* line 35, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
   nav .profile-btn {
     margin-top: 5px;
     margin-right: 20px; }
-    /* line 34, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    /* line 38, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
     nav .profile-btn a {
       color: #717071; }
-      /* line 37, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+      /* line 41, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
       nav .profile-btn a:hover {
         color: #000000; }
-    /* line 41, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+    /* line 45, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
     nav .profile-btn:hover {
       background-color: transparent !important; }
 
-/* line 46, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+/* line 50, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 nav .brand-logo {
   left: 50% !important;
   -webkit-transform: translateX(-50%) !important;
@@ -18241,17 +18268,17 @@ nav .brand-logo {
   height: 40px;
   margin-top: 15px; }
 
-/* line 64, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+/* line 68, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   height: 50px !important;
   line-height: 50px !important; }
 
-/* line 68, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+/* line 72, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
 nav a.button-collapse {
   display: block !important;
   color: #717071;
   margin-left: 25px;
   margin-top: 10px; }
-  /* line 71, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
+  /* line 75, /Users/Lucas/Project/ColorgyCore_v2_frontend/source/stylesheets/main.scss */
   nav a.button-collapse:hover {
     color: #3B3A3B; }
